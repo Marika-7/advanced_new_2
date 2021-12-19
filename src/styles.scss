@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background_main: #dbe3ec;
+    --background_part: #F6F6F6;
+    --border_color: #ced4da;
+    --text_dark: #343a40;
+    --text_light: #ffffff;
+    --text_placeholder: #777777;
+    --text_input: #494949;
+
+    --blue: #80b3e6;
+    --green: #28a745;
+    --green_hover: #218838;
+    --cyan: #249BAD;
+    --cyan_hover: #207E8C;
+    --yellow: #ffc107;
+    --yellow_hover: #e0a800;
+    --red: #dc3545;
+    --red_hover: #c82333;
+    --red_disabled: #D67B83;
+
+    --blue_focus: rgba(38, 143, 255, 0.2);
+    --green_focus: rgba(72, 180, 97, 0.5);
+    --yellow_focus: rgba(222, 170, 12, 0.5);
+    --red_focus: rgba(225, 83, 97, 0.5);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
