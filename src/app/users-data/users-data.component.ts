@@ -16,41 +16,44 @@ export class UsersDataComponent implements OnInit {
     password: '',
     email: ''
   };
-  // public usersArray: Array<Object> = [];
-  // public usersArray: Array<{login: string, password: string, email: string}> = [];
-  // ------------------
-  public usersArray = [
-    {
-      login: 'ivan',
-      password: '12345',
-      email: 'ii@gmail.com'
-    },
-    {
-      login: 'petro',
-      password: 'qwerty',
-      email: 'pp@gmail.com'
-    },
-    {
-      login: 'pavlo',
-      password: 'asdfgh',
-      email: 'pav@gmail.com'
-    },
-    {
-      login: 'marika',
-      password: '7777777',
-      email: 'mm@gmail.com'
-    },
-    {
-      login: 'raduga',
-      password: 'raduga',
-      email: 'ra@gmail.com'
-    },
-    {
-      login: 'dima',
-      password: '54321',
-      email: 'dd@gmail.com'
-    }
-  ];
+  public usersArray: Array<{
+    login: string, 
+    password: string, 
+    email: string
+  }> = [];
+  // * usersArray for testing
+  // public usersArray = [
+  //   {
+  //     login: 'ivan',
+  //     password: '12345',
+  //     email: 'ii@gmail.com'
+  //   },
+  //   {
+  //     login: 'petro',
+  //     password: 'qwerty',
+  //     email: 'pp@gmail.com'
+  //   },
+  //   {
+  //     login: 'pavlo',
+  //     password: 'asdfgh',
+  //     email: 'pav@gmail.com'
+  //   },
+  //   {
+  //     login: 'marika',
+  //     password: '7777777',
+  //     email: 'mm@gmail.com'
+  //   },
+  //   {
+  //     login: 'raduga',
+  //     password: 'raduga',
+  //     email: 'ra@gmail.com'
+  //   },
+  //   {
+  //     login: 'dima',
+  //     password: '54321',
+  //     email: 'dd@gmail.com'
+  //   }
+  // ];
 
   constructor() { }
 
