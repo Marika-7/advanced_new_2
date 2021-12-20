@@ -16,6 +16,11 @@ export class UsersDataComponent implements OnInit {
     password: '',
     email: ''
   };
+  public regExp = {
+    login: /^[\w_\-.]{4,20}$/,
+    password: /^[\w_\-.\S]{4,20}$/,
+    email: /^[a-z0-9_\-.]+@[a-z.]+\.[a-z]+$/
+  }
   public usersArray: Array<{
     login: string, 
     password: string, 
@@ -71,21 +76,21 @@ export class UsersDataComponent implements OnInit {
 
   // * check inputs
   checkInputs(): boolean {
-    if(!this.user.login) {
+    if(!this.regExp.login.test(this.user.login)) {
       this.inputWrong1 = true;
       return false;
     }
     else {
       this.inputWrong1 = false;
     }
-    if(!this.user.password) {
+    if(!this.regExp.password.test(this.user.password)) {
       this.inputWrong2 = true;
       return false;
     }
     else {
       this.inputWrong2 = false;
     }
-    if(!this.user.email) {
+    if(!this.regExp.email.test(this.user.email)) {
       this.inputWrong3 = true;
       return false;
     }
